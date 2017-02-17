@@ -1,0 +1,53 @@
+html, body {
+    height: 100%
+    min-width: 550px;
+    text-align: center;
+}
+
+.wrapper {
+    height: 100%;
+    min-height: 500px;
+}
+
+#left{ 
+    float: left; 
+    width: 25%;
+}
+
+#right{
+    float: right; 
+    width: 25%;
+}
+
+#center{ 
+    display: inline-block; 
+    width: 49%; 
+}
+
+#center, #left, #right {
+    min-height: 500px;
+}
+
+#container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#left, #center, #right, #header, #footer {
+    border: 1px solid red;
+}
+
+#footer, #header {
+    clear: both;
+    position: relative;
+}
+
+#header {
+    margin-bottom: 5px;
+}
+
+#footer {
+    margin-top: 5px;
+    width: 100%;
+}
