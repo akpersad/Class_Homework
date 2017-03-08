@@ -2,6 +2,7 @@ $('#touch').click(function() {
     $('#images').html("");
     var flickerTag = prompt("Please enter Tag");
     var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    $('#header').html(flickerTag);
     $.getJSON( flickerAPI, {
         tags: flickerTag,
         tagmode: "any",
