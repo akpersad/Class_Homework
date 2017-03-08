@@ -1,4 +1,7 @@
-#touch {
-    position: absolute;
-    left: 45%;
+#images {
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
 }

@@ -8,7 +8,12 @@ $('#touch').click(function() {
         "padding-top": "10px",
         "padding-bottom": "10px",
         "margin-bottom": "20px",
-        "margin-top": "20px"
+        "margin-top": "20px",
+        "font-size": "x-large",
+        "font-weight": "bold",
+        "width": "50%",
+        "position": "relative",
+        "left": "25%"
     });
     $.getJSON( flickerAPI, {
         tags: flickerTag,
@@ -17,7 +22,7 @@ $('#touch').click(function() {
     })
         .done(function( data ) {
             $.each( data.items, function( i, item ) {
-                $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+                $( "<img>" ).attr( "src", item.media.m ).css({"margin-right": "5px", "border": "solid black 1px"}).appendTo( "#images" );
                 if ( i === 3 ) {
                     return false;
                 }
